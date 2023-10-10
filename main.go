@@ -8,7 +8,7 @@ type englishBot struct{}
 type spanishBot struct{}
 
 type bot interface {
-	getGreeting() string // way to call interface
+	getGreeting() string // way to call interface, we are not limited to one type o value
 }
 
 func main() {
