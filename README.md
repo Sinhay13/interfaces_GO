@@ -1,12 +1,27 @@
-Greetings in Multiple Languages
+Greetings and File Names
 
-This is a simple Go program that demonstrates the use of interfaces to implement different types of bots that can generate greetings in different languages. The program defines two types of bots: englishBot and spanishBot, both of which implement the bot interface. The bot interface defines a single method getGreeting() that returns a string representing a greeting in a specific language.
+This Go program defines two types of bots, englishBot and spanishBot, that implement the bot interface with a getGreeting() method. The printGreeting() function takes a bot argument and prints its greeting to the console.
 
-The program then defines a printGreeting() function that takes a bot interface as an argument and prints the greeting returned by the getGreeting() method of the bot. Finally, the program creates instances of both englishBot and spanishBot and calls the printGreeting() function with each of them.
+The program also includes a main() function that demonstrates how to use the printGreeting() function with both types of bots.
 
-To run the program, simply execute the main.go file using the Go compiler. The program will output the following greetings:
+In addition, the program includes a main() function that prints the command-line arguments passed to the program using the os.Args variable. If an argument is provided, it prints it to the console as well.
 
-$ Hi There!
-$ Hola!
+Usage
 
-That's it! This program is a simple example of how to use interfaces in Go to implement different types of objects that share a common behavior.
+To run the program, navigate to the directory containing the main.go file and run the following command:
+
+$ go run main.go
+
+This will execute the main() function and print the greetings of both types of bots to the console.
+
+To pass command-line arguments to the program, run the following command:
+
+$ go run main.go arg1 arg2 ...
+
+This will execute the main() function and print the command-line arguments to the console.
+
+License
+
+This program is licensed under the MIT License. See the LICENSE file for details.
+
+
